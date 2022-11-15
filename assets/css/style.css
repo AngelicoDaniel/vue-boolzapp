@@ -13,6 +13,12 @@ body{
     height: 100%;
 }
 
+/* side part */
+.side-part{
+    background-color: white;
+    height: 100%;
+}
+
 /* profilo */
 .img-container{
     width: 100px;
@@ -52,4 +58,13 @@ body{
 .noti-link{
     font-size: 13px;
 }
+/* search */
+.search-container{
+    background-color: #fafafa;
+    border: 2px solid #f5f5f5;
+}
 
+/* contatti */
+.contact-list{
+    overflow: auto;
+}
