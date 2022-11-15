@@ -17,6 +17,9 @@ body{
 .side-part{
     background-color: white;
     height: 100%;
+    border-right: 1px solid gray;
+    min-width: 25%;
+
 }
 
 /* profilo */
@@ -67,4 +70,14 @@ body{
 /* contatti */
 .contact-list{
     overflow: auto;
+}
+
+/*chatbox*/
+.top-part{
+    height: 70px;
+}
+.chatbox{
+    background-image: url('/assets/img/mine.jpg');
+    overflow-y: auto;
+    height: calc(100% - 70px);
 }
