@@ -143,7 +143,7 @@ var app = new Vue({
             },
             {
             name: 'Davide',
-            avatar: '_8',
+            avatar: 'assets/img/avatar_8.jpg',
             visible: true,
             messages: [
                     {
