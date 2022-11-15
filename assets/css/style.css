@@ -36,7 +36,7 @@ body{
     background-color: #8edafc; 
     padding: 1rem;
 }
-.icon-notifiche{
+.noti-icon{
     background-color: white;
     border-radius: 50%;
     width: 50px;
@@ -46,3 +46,10 @@ body{
     display: flex;
     justify-content: center;
 }
+.noti-text{
+    font-size: 14px;
+}
+.noti-link{
+    font-size: 13px;
+}
+
