@@ -4,4 +4,12 @@ body{
     background: linear-gradient(0deg,  rgb(236, 229, 221) 85% ,  rgb(	18, 140, 126) 10%);
     }
 
+.app{
+    height: 90%;
+    width: 80%;
+    background-color: red;
+}
 
+#root{
+    height: 100%;
+}
