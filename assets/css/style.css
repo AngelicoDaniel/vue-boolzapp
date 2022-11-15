@@ -36,3 +36,13 @@ body{
     background-color: #8edafc; 
     padding: 1rem;
 }
+.icon-notifiche{
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #8edafc; 
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
