@@ -89,8 +89,17 @@ i{
 .message{
     width: 300px;
     border-radius: 15px;
-    background-color: green
 
+}
+
+.recived{
+    background-color: #d5f9ba;
+    align-self: end;
+}
+
+.sent{
+    background-color: white;
+    align-self: flex-start;
 }
 
 /* bottom part */
