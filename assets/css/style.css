@@ -23,7 +23,7 @@ i{
     height: 100%;
     border-right: 1px solid gray;
     min-width: 25%;
-
+    overflow-y: scroll;
 }
 
 /* profilo */
@@ -73,7 +73,7 @@ i{
 
 /* contatti */
 .contact-list{
-    overflow: auto;
+    overflow-y: auto;
 }
 
 /*chatbox*/

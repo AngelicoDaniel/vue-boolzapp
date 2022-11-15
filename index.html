@@ -56,9 +56,9 @@
 
             <!--lista contatti-->
             <div class="contact-list" v-for="(element, index) in contacts">
-                <div class="d-flex justify-content-between bg-lightgray container" >
+                <div class="d-flex justify-content-between border border-secondary p-2 container" >
                     <div>
-                      <div class="img-container m-1">
+                      <div class="img-container m-1 d-flex align-items-center">
                           <img class="w-50 circle" :src="contacts[index].avatar">
                           <span>{{ element.name }}</span>
                       </div>                      
