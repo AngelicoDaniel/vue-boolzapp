@@ -1,13 +1,12 @@
-var app = new Vue(
-	{
-	  el: '#app',
-		data:{
-         contacts: [
+var app = new Vue({
+    el: '#root',
+    data: {
+        contacts: [
             {
-                name: 'Michele',
-                avatar: './assets/img/avatar_1.jpg',
-                visible: true,
-                messages: [
+            name: 'Michele',
+            avatar: 'assets/img/avatar_1.jpg',
+            visible: true,
+            messages: [
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Hai portato a spasso il cane?',
@@ -26,10 +25,10 @@ var app = new Vue(
                 ],
             },
             {
-                name: 'Fabio',
-                avatar: './assets/img/avatar_2.jpg',
-                visible: true,
-                messages: [
+            name: 'Fabio',
+            avatar: 'assets/img/avatar_2.jpg',
+            visible: true,
+            messages: [
                     {
                         date: '20/03/2020 16:30:00',
                         message: 'Ciao come stai?',
@@ -48,10 +47,10 @@ var app = new Vue(
                 ],
             },
             {
-                name: 'Samuele',
-                avatar: './assets/img/avatar_3.jpg',
-                visible: true,
-                messages: [
+            name: 'Samuele',
+            avatar: 'assets/img/avatar_3.jpg',
+            visible: true,
+            messages: [
                     {
                         date: '28/03/2020 10:10:40',
                         message: 'La Marianna va in campagna',
@@ -70,10 +69,10 @@ var app = new Vue(
                 ],
             },
             {
-                name: 'Alessandro B.',
-                avatar: './assets/img/avatar_4.jpg',
-                visible: true,
-                messages: [
+            name: 'Alessandro B.',
+            avatar: 'assets/img/avatar_4.jpg',
+            visible: true,
+            messages: [
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Lo sai che ha aperto una nuova pizzeria?',
@@ -87,10 +86,10 @@ var app = new Vue(
                 ],
             },
             {
-                name: 'Alessandro L.',
-                avatar: './assets/img/avatar_5.jpg',
-                visible: true,
-                messages: [
+            name: 'Alessandro L.',
+            avatar: 'assets/img/avatar_5.jpg',
+            visible: true,
+            messages: [
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Ricordati di chiamare la nonna',
@@ -104,10 +103,10 @@ var app = new Vue(
                 ],
             },
             {
-                name: 'Claudia',
-                avatar: './assets/img/avatar_6.jpg',
-                visible: true,
-                messages: [
+            name: 'Claudia',
+            avatar: 'assets/img/avatar_6.jpg',
+            visible: true,
+            messages: [
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Ciao Claudia, hai novità?',
@@ -126,10 +125,10 @@ var app = new Vue(
                 ],
             },
             {
-                name: 'Federico',
-                avatar: './assets/img/avatar_7.jpg',
-                visible: true,
-                messages: [
+            name: 'Federico',
+            avatar: 'assets/img/avatar_7.jpg',
+            visible: true,
+            messages: [
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Fai gli auguri a Martina che è il suo compleanno!',
@@ -143,10 +142,10 @@ var app = new Vue(
                 ],
             },
             {
-                name: 'Davide',
-                avatar: './assets/img/avatar_8.jpg',
-                visible: true,
-                messages: [
+            name: 'Davide',
+            avatar: '_8',
+            visible: true,
+            messages: [
                     {
                         date: '10/01/2020 15:30:55',
                         message: 'Ciao, andiamo a mangiare la pizza stasera?',
@@ -164,18 +163,9 @@ var app = new Vue(
                     }
                 ],
             }
-         ],
-
-         lastMessageText: '',
-
-         number: 2,
-
-	  },
-
-		methods:{
-			
-         
-
-		}
-	}
-);
+        ]
+    },
+    methods: {
+  
+    }
+  })
