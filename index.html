@@ -97,8 +97,9 @@
 
               <!--chatbox-->
               <div class="chatbox flex-grow-1 d-flex flex-column">
-               <div class="message recived justify-content-around m-4 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
-               <div class="message sent justify-content-around m-4 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+                <div v-for="(element, index) in contacts[currentContact].messages" class="message"></div>
+               <!-- <div class="message recived justify-content-around m-4 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+               <div class="message sent justify-content-around m-4 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div> -->
                
               </div>
 
