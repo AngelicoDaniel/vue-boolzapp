@@ -173,12 +173,13 @@ var app = new Vue({
         },
         
         sendMessage(){
-
+            
             this.contacts[this.currentContact].messages.push({
                 date: '',
                 message: this.userMessage,
                 status: 'sent'
             });
+            this.userMessage = '';
             
         }
 
