@@ -2,6 +2,7 @@ var app = new Vue({
     el: '#root',
     data: {
         currentContact: 0,
+        message: '',
         contacts: [
             {
             name: 'Michele',
@@ -171,11 +172,12 @@ var app = new Vue({
             this.currentContact = index;
         },
         
-        userMsg(){
-            let textValue = document.getElementById('userText').value
-            console.log(textValue),
-            this.contacts[this.currentContact].messages.push(textValue);
-            textValue = '';
+        sendMessage(){
+        
+            message = document.getElementById('userInput').value
+            console.log(message),
+            this.contacts[this.currentContact].messages.push(this.message);
+            
         }
 
     }
