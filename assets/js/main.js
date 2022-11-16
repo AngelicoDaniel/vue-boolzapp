@@ -1,6 +1,7 @@
 var app = new Vue({
     el: '#root',
     data: {
+        currentContact: 0,
         contacts: [
             {
             name: 'Michele',
@@ -164,11 +165,10 @@ var app = new Vue({
                 ],
             }
         ],
-        currentChat: 0
     },
     methods: {
-        selectChat(i){
-            this.currentChat = i
+        selectContact(index){
+            this.currentContact = index;
         }
     }
   })
