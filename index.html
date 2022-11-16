@@ -56,7 +56,7 @@
 
             <!--lista contatti-->
             <div class="contact-list" v-for="(element, index) in contacts">
-                <div class="d-flex justify-content-between border-bottom border-secondary p-2 container" >
+                <div class="d-flex justify-content-between border-bottom border-secondary p-2 container" @click="selectChat(i)">
                     <div>
                       <div class="m-1 d-flex align-items-center">
                           <img class="w-50 circle" :src="contacts[index].avatar">
@@ -83,8 +83,8 @@
             <div class="d-flex justify-content-between bg-lightgray container top-part">
                 <div class="align-items-center d-flex">
                   <div class="img-container m-1 align-items-center d-flex">
-                      <img class="w-50 circle" src="assets/img/avatar_io.jpg" alt="avatar_io">
-                      <span>Sofia</span>
+                      <img class="w-50 circle" :src="contacts[currentChat].avatar" alt="avatar_io">
+                      <span>{{element[currentChat].name}}</span>
                   </div>                      
                 </div>
   

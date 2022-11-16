@@ -163,7 +163,8 @@ var app = new Vue({
                     }
                 ],
             }
-        ]
+        ],
+        currentChat: 0
     },
     methods: {
         selectChat(i){
