@@ -179,15 +179,13 @@ var app = new Vue({
                 message: this.userMessage,
                 status: 'sent'
             });
-            this.userMessage = '';           
+            this.userMessage = '';   
+            
+            setTimeout(() => {
+                alert('ciao')
+            }, 1000);
         },
 
-        reciveMessage(){
-            setTimeout(() => {
-                
-            }, 1000)
-        }
-        
 
     }
   })
