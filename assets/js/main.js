@@ -196,8 +196,9 @@ var app = new Vue({
         },
 
         delete(){
-            
-        }
+
+        },
+
 
 
     }
