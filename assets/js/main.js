@@ -182,7 +182,11 @@ var app = new Vue({
             this.userMessage = '';   
             
             setTimeout(() => {
-                alert('ciao')
+                this.contacts[this.currentContact].messages.push({
+                    date: '',
+                    message: 'ok',
+                    status: 'recived'
+                });
             }, 1000);
         },
 
