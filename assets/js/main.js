@@ -179,9 +179,15 @@ var app = new Vue({
                 message: this.userMessage,
                 status: 'sent'
             });
-            this.userMessage = '';
-            
+            this.userMessage = '';           
+        },
+
+        reciveMessage(){
+            setTimeout(() => {
+                
+            }, 1000)
         }
+        
 
     }
   })
