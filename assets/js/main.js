@@ -169,6 +169,12 @@ var app = new Vue({
     methods: {
         selectContact(index){
             this.currentContact = index;
+        },
+        
+        userMsg(){
+            let userTxt = document.getElementById('userText')
+            console.log(userTxt.value)
         }
+
     }
   })
