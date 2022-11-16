@@ -3,6 +3,7 @@ var app = new Vue({
     data: {
         currentContact: 0,
         userMessage: '',
+        search: '',
         contacts: [
             {
             name: 'Michele',
@@ -189,6 +190,14 @@ var app = new Vue({
                 });
             }, 1000);
         },
+
+        searchContact(){
+            
+        },
+
+        delete(){
+            
+        }
 
 
     }

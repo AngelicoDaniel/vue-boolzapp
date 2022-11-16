@@ -50,7 +50,7 @@
             <div class="search-container">
                 <div class="mx-2 d-flex justify-content-center align-items-center m-1">
                     <i class="fa-solid fa-magnifying-glass m-1"></i>
-                    <input type="text" class="flex-grow-1 border-0 border-bottom-1" placeholder="Cerca o inizia una nuova chat">
+                    <input v-model="search"type="text" class="flex-grow-1 border-0 border-bottom-1" placeholder="Cerca o inizia una nuova chat">
                 </div>
             </div>
 
@@ -97,7 +97,7 @@
 
               <!--chatbox-->
               <div class="chatbox flex-grow-1 d-flex flex-column">
-                <div v-for="(elem, index) in contacts[currentContact].messages" class="message m-3 p-3" :class="elem.status == 'sent' ? 'sent' : 'recived'">{{elem.message}}</div>
+                <div v-for="(elem, index) in contacts[currentContact].messages" class="message m-3 p-3 justify-content-between d-flex" :class="elem.status == 'sent' ? 'sent' : 'recived'">{{elem.message}} <span><i class="fa-solid fa-chevron-down"></i></span></div>
                <!-- <div class="message recived justify-content-around m-4 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
                <div class="message sent justify-content-around m-4 p-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div> -->
                
