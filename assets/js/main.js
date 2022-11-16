@@ -172,8 +172,10 @@ var app = new Vue({
         },
         
         userMsg(){
-            let userTxt = document.getElementById('userText')
-            console.log(userTxt.value)
+            let textValue = document.getElementById('userText').value
+            console.log(textValue),
+            this.contacts[currentContact].messages.push(textValue),
+            textValue = '';
         }
 
     }
