@@ -174,7 +174,7 @@ var app = new Vue({
         userMsg(){
             let textValue = document.getElementById('userText').value
             console.log(textValue),
-            this.contacts[currentContact].messages.push(textValue),
+            this.contacts[this.currentContact].messages.push(textValue);
             textValue = '';
         }
 
