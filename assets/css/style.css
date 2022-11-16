@@ -23,7 +23,7 @@ i{
     height: 100%;
     border-right: 1px solid gray;
     min-width: 25%;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 /* profilo */
@@ -49,6 +49,12 @@ i{
     background-color: #8edafc; 
     padding: 1rem;
 }
+
+.fa-bell-slash{
+    color: #8edafc;
+    font-size: 20px;
+}
+
 .noti-icon{
     background-color: white;
     border-radius: 50%;
@@ -72,13 +78,18 @@ i{
 }
 
 /* contatti */
-.contact-list{
-    overflow-y: auto;
+.overflow{
+    overflow-y: scroll;
 }
 
 .last-msg{
     font-size: 10px;
     white-space: nowrap;
+    color: #b1b1b1;
+}
+
+.date{
+    font-size: 10px;
     color: #b1b1b1;
 }
 

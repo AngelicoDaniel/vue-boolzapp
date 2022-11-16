@@ -195,8 +195,8 @@ var app = new Vue({
             
         },
 
-        delete(){
-
+        deleteMsg(index){
+            this.contacts[this.currentContact].messages.splice(index,1)
         },
 
 
