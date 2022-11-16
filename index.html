@@ -56,31 +56,23 @@
 
             <!--lista contatti-->
             <div class="contact-list" v-for="(element, index) in contacts">
-                <div class="d-flex justify-content-between border border-secondary p-2 container" >
+                <div class="d-flex justify-content-between border-bottom border-secondary p-2 container" >
                     <div>
-                      <div class="img-container m-1 d-flex align-items-center">
+                      <div class="img-conok erikatainer m-1 d-flex align-items-center">
                           <img class="w-50 circle" :src="contacts[index].avatar">
-                          <span>{{ element.name }}</span>
+                          <div>
+                             <span>{{ element.name }}</span>
+                          <div class="last-msg">{{element.messages[element.messages.length - 1].message}}</div>
+                          </div>
+                         
                       </div>                      
                     </div>
       
-                    <div class="text-lightgray d-flex align-items-center">
-                     <span>lorem</span>
+                    <div class="text-lightgray d-flex align-items-center last-msg">
+                     <span>{{element.messages[element.messages.length - 1].date}}</span>
                     </div>  
                   </div>
 
-                  <!-- <div class="d-flex justify-content-between container">
-                    <div>
-                      <div class="img-container m-1">
-                          <img class="w-50 circle" src="assets/img/avatar_io.jpg" alt="avatar_io">
-                          <span>Sofia</span>
-                      </div>                      
-                    </div>
-      
-                    <div class="text-lightgray d-flex align-items-center">
-                     <span>lorem</span>
-                    </div>  
-                  </div> -->
             </div>
 
         </div>

@@ -76,6 +76,12 @@ i{
     overflow-y: auto;
 }
 
+.last-msg{
+    font-size: 10px;
+    white-space: nowrap;
+    color: #b1b1b1;
+}
+
 /*chatbox*/
 .top-part{
     height: 70px;
