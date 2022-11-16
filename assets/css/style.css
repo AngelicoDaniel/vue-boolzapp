@@ -98,12 +98,12 @@ i{
 
 }
 
-.recived{
+.sent{
     background-color: #d5f9ba;
     align-self: end;
 }
 
-.sent{
+.recived{
     background-color: white;
     align-self: flex-start;
 }
