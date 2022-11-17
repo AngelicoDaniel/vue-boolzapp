@@ -173,10 +173,28 @@ var app = new Vue({
             this.currentContact = index;
         },
         
+        // getLastHourContacts(elem){
+        //     let lastDate = element.messages[elem.messages.length - 1].date
+        //     lastDate = lastDate.split(' ')
+        //     return lastDate[1];
+        // },
+
+        // getLastHourMessages(elem){
+        //     let date = elem.date;
+        //     date = date.split(' ')
+        //     return date[1];
+        // },
+
+
         sendMessage(){
-            
+            const d = new Date();
+            let time = d.toLocaleTimeString();
+            let date = d.toLocaleDateString();
+            console.log(date, time)
+            let now = `${date} ${time}`
+            console.log(now)
             this.contacts[this.currentContact].messages.push({
-                date: '',
+                date: now,
                 message: this.userMessage,
                 status: 'sent'
             });
@@ -184,16 +202,16 @@ var app = new Vue({
             
             setTimeout(() => {
                 this.contacts[this.currentContact].messages.push({
-                    date: '',
+                    date: now,
                     message: 'ok',
                     status: 'recived'
                 });
             }, 1000);
         },
 
-        searchContact(){
+        // searchContact(){
             
-        },
+        // },
 
         deleteMsg(index){
             this.contacts[this.currentContact].messages.splice(index,1)

@@ -91,6 +91,12 @@ i{
 .date{
     font-size: 10px;
     color: #b1b1b1;
+    align-self: flex-end;
+    white-space: nowrap;
+}
+
+.selected:hover{
+    background-color: lightgray;
 }
 
 /*chatbox*/
@@ -100,7 +106,7 @@ i{
 .chatbox{
     background-image: url('/assets/img/mine.jpg');
     overflow-y: auto;
-    height: calc(100% - 120px);
+    height: calc(100% - 120px)     ;
 }
 
 .message{
