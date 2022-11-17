@@ -110,9 +110,7 @@ i{
 }
 
 .message{
-    width: 300px;
     border-radius: 15px;
-
 }
 
 .sent{
@@ -120,7 +118,7 @@ i{
     align-self: end;
 }
 
-.recived{
+.recieved{
     background-color: white;
     align-self: flex-start;
 }

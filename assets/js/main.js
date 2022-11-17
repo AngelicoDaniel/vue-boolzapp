@@ -199,17 +199,26 @@ var app = new Vue({
                 this.contacts[this.currentContact].messages.push({
                     date: now,
                     message: 'ok',
-                    status: 'recived'
+                    status: 'recieved'
                 });
             }, 1000);
         },
 
-        // searchContact(){
-        //     this.contacts.forEach((elem) => {
-        //         if(this.contacts.name.includes(this.inputSearch)){} 
-        //     });
+        searchContact(){
+            this.contacts.forEach((elem, index) => {
+                if (elem.name.includes(this.search)){
+                  elem.visible == true;
+                } else {
+                  elem.visible == true;
+                }
+                
+            });
+        },
         
-        // },
+ 
+        
+  
+        
 
         deleteMsg(index){
             this.contacts[this.currentContact].messages.splice(index,1)
