@@ -95,7 +95,7 @@ i{
     white-space: nowrap;
 }
 
-.selected:hover{
+.selected{
     background-color: lightgray;
 }
 

@@ -50,28 +50,28 @@
             <div class="search-container">
                 <div class="mx-2 d-flex justify-content-center align-items-center m-1">
                     <i class="fa-solid fa-magnifying-glass m-1"></i>
-                    <input v-model="search"type="text" class="flex-grow-1 border-0 border-bottom-1" placeholder="Cerca o inizia una nuova chat">
+                    <input type="text" class="flex-grow-1 border-0 border-bottom-1" placeholder="Cerca o inizia una nuova chat">
                 </div>
             </div>
 
             <!--lista contatti-->
             <div class="overflow">
-                <div class="contact-list" v-for="(element, index) in contacts">
-                     <div class="d-flex justify-content-between border-bottom border-secondary p-2 container selected" @click="selectContact(index)">
+                <div class="contact-list" v-for="(elem, index) in contacts">
+                     <div class="d-flex justify-content-between border-bottom border-secondary p-2 container" @click="selectContact(index)" :class="(index == currentContact) ? 'selected' : ''">
                         <div>
                             <div class="m-1 d-flex align-items-center">
                                 <img class="w-50 circle px-1" :src="contacts[index].avatar">
                                 <div>
-                                    <span>{{ element.name }}</span>
-                                    <div class="last-msg">{{element.messages[element.messages.length - 1].message}}</div>
+                                    <span>{{ elem.name }}</span>
+                                    <div class="last-msg">{{elem.messages[elem.messages.length - 1].message}}</div>
                                 </div>
                          
                             </div>                      
                         </div>
       
                         <div class="text-lightgray date">
-                            <span>{{element.messages[element.messages.length - 1].date}}</span>
-                            <!-- <span> {{getLastHourMessages(elem) }}</span> -->
+                            <!-- <span>{{elem.messages[elem.messages.length - 1].date}}</span> -->
+                            <span> {{getLastHourMessages(elem) }}</span>
                         </div>  
                     </div>
 
@@ -88,7 +88,7 @@
                 <div class="align-items-center d-flex">
                   <div class="img-container m-1 align-items-center d-flex">
                       <img class="w-50 circle" :src="contacts[currentContact].avatar" alt="avatar_io">
-                      <span>{{contacts[currentContact].name}}</span>
+                      <span class="text-nowrap">{{contacts[currentContact].name}}</span>
                   </div>                      
                 </div>
   

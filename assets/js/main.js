@@ -173,18 +173,13 @@ var app = new Vue({
             this.currentContact = index;
         },
         
-        // getLastHourContacts(elem){
-        //     let lastDate = element.messages[elem.messages.length - 1].date
-        //     lastDate = lastDate.split(' ')
-        //     return lastDate[1];
-        // },
 
-        // getLastHourMessages(elem){
-        //     let date = elem.date;
-        //     date = date.split(' ')
-        //     return date[1];
-        // },
-
+        getLastHourMessages(elem){
+            let date = elem.messages[elem.messages.length - 1].date;
+            date = date.split(' ');          
+            return date[1];      
+        },
+        
 
         sendMessage(){
             const d = new Date();
@@ -210,7 +205,10 @@ var app = new Vue({
         },
 
         // searchContact(){
-            
+        //     this.contacts.forEach((elem) => {
+        //         if(this.contacts.name.includes(this.inputSearch)){} 
+        //     });
+        
         // },
 
         deleteMsg(index){
