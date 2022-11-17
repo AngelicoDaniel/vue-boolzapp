@@ -206,9 +206,6 @@ var app = new Vue({
 
         searchContact: function() {
             this.contacts.forEach(elem => {
-                console.log(elem.name)
-                console.log(this.search.toLowerCase())
-                console.log(elem.visible)
                 if (elem.name.toLowerCase().includes(this.search.toLowerCase())) {
                     elem.visible = true;
                 } else {
@@ -217,15 +214,10 @@ var app = new Vue({
             });
         },
  
-        
-  
-        
-
+          
         deleteMsg(index){
             this.contacts[this.currentContact].messages.splice(index,1)
         },
-
-
 
     }
   })

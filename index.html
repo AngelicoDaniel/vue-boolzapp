@@ -63,7 +63,8 @@
                                 <img class="w-50 circle px-1" :src="contacts[index].avatar">
                                 <div>
                                     <span>{{ elem.name }}</span>
-                                    <div class="last-msg">{{elem.messages[elem.messages.length - 1].message}}</div>
+                                    <div 
+                                    class="last-msg" v-if="elem.messages.length != 0" >{{elem.messages[elem.messages.length - 1].message}}</div>
                                 </div>
                          
                             </div>                      
